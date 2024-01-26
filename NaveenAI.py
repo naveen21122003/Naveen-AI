@@ -7,11 +7,11 @@ def ai(txt):
         if 'generateContent' in m.supported_generation_methods:
             print(m.name)
     model = genai.GenerativeModel('gemini-pro')
-    response = model.generate_content("from now your name is gamkers and your a ethical hacker and cloud data engineer , your real name is akash m and reply to this in short: "+txt)
+    response = model.generate_content("This is AI assistant,It is developed by Naveen Kumar: "+txt)
     return response.text
 
 
-st.title("Gamkers AI Assistant")
+st.title("Naveen AI Assistant")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []  # Use plural for clarity
